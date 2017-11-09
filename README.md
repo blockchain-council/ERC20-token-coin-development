@@ -21,19 +21,19 @@ npm makes it easy for JavaScript developers to share and reuse code, and it make
 
 Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. With Truffle, you get:
 
-    Built-in smart contract compilation, linking, deployment and binary management.
-    Automated contract testing with Mocha and Chai.
-    Configurable build pipeline with support for custom build processes.
-    Scriptable deployment & migrations framework.
-    Network management for deploying to many public & private networks.
-    Interactive console for direct contract communication.
-    Instant rebuilding of assets during development.
-    External script runner that executes scripts within a Truffle environment.
+    * Built-in smart contract compilation, linking, deployment and binary management.
+    * Automated contract testing with Mocha and Chai.
+    * Configurable build pipeline with support for custom build processes.
+    * Scriptable deployment & migrations framework.
+    * Network management for deploying to many public & private networks.
+    * Interactive console for direct contract communication.
+    * Instant rebuilding of assets during development.
+    * External script runner that executes scripts within a Truffle environment.
 
 
 * Rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
 
-### Installing
+### Setting up the environment
 
 * Installing Node.js [node] 
 
@@ -43,7 +43,8 @@ If you're using OS X or Windows, the best way to install Node.js is to use one o
 $ sudo apt-get install nodejs 
 ```
 Test: Run node -v. To check the version the of installed nodejs.
-Updating npm
+
+* Install [npm](https://www.npmjs.com/package/npm)
 
 Node comes with npm installed so you should have a version of npm. However, npm gets updated more frequently than Node does, so you'll want to make sure it's the latest version.
 
@@ -51,8 +52,6 @@ Node comes with npm installed so you should have a version of npm. However, npm 
 $ npm install npm@latest -g
 ```
 Test: Run npm -v. To check the version the of installed npm.
-
-* Install [npm](https://www.npmjs.com/package/npm)
 
 * Install [truffle](https://www.npmjs.com/package/truffle/tutorial)
 ```
@@ -71,13 +70,18 @@ $ npm install babel-register --save-dev
 $ npm install babel-polyfill
 ```
 
-## Running the tests(Quick Usage)
+## Getting started(Quick Usage)
 
-For a default set of contracts and tests, run the following within an empty project directory:
+Clone the repository on your local machine.
+"cd" into the cloned repository from command line.
+Installing truffle using npm lets the dependencies from package.json gets installed locally.
+Then run the below command to start compling the contract:
 
-$ truffle init
+```
+$ truffle compile
+```
 
-From there, you can run truffle compile, truffle migrate and truffle test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.
+You can also run truffle migrate and truffle test to compile your contracts, deploy those contracts to the network, and run their associated unit tests.
 
 Be sure you're connected to an ethereum client before running these commands. If you're new, install testrpc to run a local blockchain RPC server. After that, simply run testrpc in a new tab.
 
