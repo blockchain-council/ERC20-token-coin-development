@@ -20,15 +20,14 @@ npm makes it easy for JavaScript developers to share and reuse code, and it make
 * [truffle](https://www.npmjs.com/package/truffle/tutorial)
 
 Truffle is a development environment, testing framework and asset pipeline for Ethereum, aiming to make life as an Ethereum developer easier. With Truffle, you get:
-
-    * Built-in smart contract compilation, linking, deployment and binary management.
-    * Automated contract testing with Mocha and Chai.
-    * Configurable build pipeline with support for custom build processes.
-    * Scriptable deployment & migrations framework.
-    * Network management for deploying to many public & private networks.
-    * Interactive console for direct contract communication.
-    * Instant rebuilding of assets during development.
-    * External script runner that executes scripts within a Truffle environment.
+>Built-in smart contract compilation, linking, deployment and binary management.
+>Automated contract testing with Mocha and Chai.
+>Configurable build pipeline with support for custom build processes.
+>Scriptable deployment & migrations framework.
+>Network management for deploying to many public & private networks.
+>Interactive console for direct contract communication.
+>Instant rebuilding of assets during development.
+>External script runner that executes scripts within a Truffle environment.
 
 
 * Rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
@@ -53,11 +52,22 @@ $ npm install npm@latest -g
 ```
 Test: Run npm -v. To check the version the of installed npm.
 
-* Install [truffle](https://www.npmjs.com/package/truffle/tutorial)
+
+## Getting started(Quick Usage)
+
+* Clone the repository on your local machine.
+```
+$ git clone https://github.com/blockchain-council/coin-development.git
+```
+* "cd" into the cloned repository from command line.
+```
+$ cd clone-development
+```
+* Then Install truffle, installing truffle using npm lets the dependencies from package.json gets installed locally. [truffle](https://www.npmjs.com/package/truffle/tutorial)
 ```
 $ npm install truffle
 ```
-* Install a rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
+* Install a rpc client which is a program or service that initiates or responds to an RPC request, preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
 ```
 $ npm i ethereumjs-testrpc
 ```
@@ -70,11 +80,6 @@ $ npm install babel-register --save-dev
 $ npm install babel-polyfill
 ```
 
-## Getting started(Quick Usage)
-
-Clone the repository on your local machine.
-"cd" into the cloned repository from command line.
-Installing truffle using npm lets the dependencies from package.json gets installed locally.
 Then run the below command to start compling the contract:
 
 ```
