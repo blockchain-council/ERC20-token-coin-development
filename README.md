@@ -63,21 +63,9 @@ $ git clone https://github.com/blockchain-council/coin-development.git
 ```
 $ cd clone-development
 ```
-* Then Install truffle, installing truffle using npm lets the dependencies from package.json gets installed locally. [truffle](https://www.npmjs.com/package/truffle/tutorial)
+* Then run the below command which lets the dependencies from package.json gets installed locally for this particular project. The major requirements are truffle, testrpc, babel-register and babel-polyfill.
 ```
-$ npm install truffle
-```
-* Install a rpc client which is a program or service that initiates or responds to an RPC request, preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
-```
-$ npm i ethereumjs-testrpc
-```
-* Install 'babel-register for installing node modules [babel-register](https://www.npmjs.com/package/babel-register)
-```
-$ npm install babel-register --save-dev
-```
-* Install 'babel-polyfill' for installing node modules [babel-polyfill](https://www.npmjs.com/package/babel-polyfill/tutorial)
-```
-$ npm install babel-polyfill
+$ npm install
 ```
 
 Then run the below command to start compling the contract:
