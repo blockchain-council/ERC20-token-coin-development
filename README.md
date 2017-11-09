@@ -7,6 +7,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
+* [npm](https://www.npmjs.com/package/npm)
+
+* [truffle](https://www.npmjs.com/package/truffle/tutorial)
+
+* Rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
 
 ### Installing
 
