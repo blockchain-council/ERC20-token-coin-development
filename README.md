@@ -10,13 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-* ** Install [npm](https://www.npmjs.com/package/npm)
+* Install [npm](https://www.npmjs.com/package/npm)
 
-* ** Install [truffle](https://www.npmjs.com/package/truffle/tutorial)
+* Install [truffle](https://www.npmjs.com/package/truffle/tutorial)
 ```
 $ npm install truffle
 ```
-* ** Install a rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
+* Install a rpc client preferrably [testrpc](https://www.npmjs.com/package/ethereumjs-testrpc/tutorial)
 ```
 $ npm i ethereumjs-testrpc
 ```
@@ -30,22 +30,6 @@ cd coin-development
 truffle compile
 ```
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
+* **Toshendra Sharma**  - Founder & CEO @ RecordsKeeper, Toshacademy, Toshblocks(https://www.udemy.com/user/toshendrasharma2/)
