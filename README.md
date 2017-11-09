@@ -1,5 +1,5 @@
 # Ethereum Developer: Create a New Cryptocurrency in Blockchain
-Learn how to create a cryptocurrency in Ethereum. Find the entire course [here] by Toshendra Sharma (https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum)
+Learn how to create a cryptocurrency in Ethereum. Find the entire course [here](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum) by Toshendra Sharma 
 
 ## Getting Started
 
@@ -32,4 +32,4 @@ truffle compile
 
 ## Authors
 
-* **Toshendra Sharma**  - Founder & CEO @ RecordsKeeper, Toshacademy, Toshblocks(https://www.udemy.com/user/toshendrasharma2/)
+* [**Toshendra Sharma**](https://www.udemy.com/user/toshendrasharma2/)  - Founder & CEO @ RecordsKeeper, Toshacademy, Toshblocks
