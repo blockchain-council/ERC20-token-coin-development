@@ -1,6 +1,6 @@
 # Ethereum Developer: Create a New Cryptocurrency in Blockchain
 
-This code base is a part of e-learning course to create a cyptocurrency [How to Build Decentralized Auto Democracy DAO in Blockchain](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum?utm_source=github&utm_medium=coin-development-repo) hosted at [Tosh Academy](https://www.toshacademy.com/collections/blockchain?utm_source=github&utm_medium=coin-development-repo). 
+This code base is a part of e-learning course to create a new cyptocurrency in Blockchain [Ethereum Developer: Create a New Cryptocurrency with Ethereum](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum?utm_source=github&utm_medium=coin-development-repo) hosted at [Tosh Academy](https://www.toshacademy.com/collections/blockchain?utm_source=github&utm_medium=coin-development-repo). 
 
 Learn how to Create a New Cryptocurrency in Blockchain.
 
