@@ -1,5 +1,8 @@
 # Ethereum Developer: Create a New Cryptocurrency in Blockchain
-Learn how to create a cryptocurrency in Ethereum. Find the entire course [here](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum) by Toshendra Sharma 
+
+This code base is a part of e-learning course to create a cyptocurrency [How to Build Decentralized Auto Democracy DAO in Blockchain](https://www.toshacademy.com/courses/ethereum-developer-create-a-new-cryptocurrency-with-ethereum?utm_source=github&utm_medium=coin-development-repo) hosted at [Tosh Academy](https://www.toshacademy.com/collections/blockchain?utm_source=github&utm_medium=coin-development-repo). 
+
+Learn how to Create a New Cryptocurrency in Blockchain.
 
 ## Getting Started
 
@@ -61,7 +64,7 @@ $ git clone https://github.com/blockchain-council/coin-development.git
 ```
 * "cd" into the cloned repository from command line.
 ```
-$ cd clone-development
+$ cd coin-development
 ```
 * Then run the below command which lets the dependencies from package.json gets installed locally for this particular project. The major requirements are truffle, testrpc, babel-register and babel-polyfill.
 ```
@@ -80,4 +83,26 @@ Be sure you're connected to an ethereum client before running these commands. If
 
 ## Authors
 
-* [**Toshendra Sharma**](https://www.udemy.com/user/toshendrasharma2/)  - Founder & CEO @ RecordsKeeper, Toshacademy, Toshblocks
+[**Toshendra Sharma**](https://www.udemy.com/user/toshendrasharma2/)
+
+Toshendra Sharma is the founder & CEO of [RecordsKeeper](https://recordskeeper.co), a Blockchain-based record keeping solution for businesses & also the founder of [Toshblocks](https://www.toshblocks.com), A Blockchain Consulting & Development. Toshendra also founded [Blockchain Council](https://www.blockchain-council.org) to bring elite Blockchain experts together on a single platform.
+
+Earlier, he founded Appvigil (Wegilant) in Nov 2011 while pursuing my Masters in Application Security from IIT Bombay, India. Appvigil is the Mobile App Vulnerability Scanner on Cloud. He was heading the team as CEO. The company has won many awards & accolades under his leadership.
+
+Toshendra has worked on many Ethereum based projects for many companies & individuals for their coins & Initial Coin Offering (ICO).
+
+He is a well-known instructor & speaker in Blockchain space and taught more than 12,000 students worldwide spread in 148+ countries. He is also the part of Forbes India 30Under30 List of 2016 in Technology space.
+
+You can find him on: 
+* [Facebook](https://www.facebook.com/toshendra11)
+* [LinkedIn](https://linkedin.com/in/toshendra)
+* [Twitter](https://www.twitter.com/toshendrasharma)
+* [Tosh Academy](https://www.toshacademy.com)
+* [Toshblocks](https://www.toshblocks.com/)
+* [Udemy](https://www.udemy.com/user/toshendrasharma2/)
+* [Podacasts](http://www.buzzsprout.com/134645)
+
+
+License
+-------------
+[GPL v3](https://www.gnu.org/licenses/gpl-3.0.txt)
