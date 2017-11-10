@@ -64,7 +64,7 @@ $ git clone https://github.com/blockchain-council/coin-development.git
 ```
 * "cd" into the cloned repository from command line.
 ```
-$ cd coin-development
+$ cd ERC20-token-coin-development
 ```
 * Then run the below command which lets the dependencies from package.json gets installed locally for this particular project. The major requirements are truffle, testrpc, babel-register and babel-polyfill.
 ```
