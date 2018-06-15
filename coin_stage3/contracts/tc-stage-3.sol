@@ -1,9 +1,9 @@
-pragma solidity ^0.4.8;
+pragma solidity ^0.4.22;
 
 contract admined {
 	address public admin;
 
-	function admined() public {
+	constructor() public {
 		admin = msg.sender;
 	}
 
@@ -31,7 +31,7 @@ contract TCoin {
 	event Transfer(address indexed from, address indexed to, uint256 value);
 
 
-	function TCoin(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
+	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
 		balanceOf[msg.sender] = initialSupply;
 		totalSupply = initialSupply;
 		decimals = decimalUnits;
@@ -46,7 +46,7 @@ contract TCoin {
 
 		balanceOf[msg.sender] -= _value;
 		balanceOf[_to] += _value;
-		Transfer(msg.sender, _to, _value);
+		emit Transfer(msg.sender, _to, _value);
 	}
 
 	function approve(address _spender, uint256 _value) public returns (bool success){
@@ -61,7 +61,7 @@ contract TCoin {
 		balanceOf[_from] -= _value;
 		balanceOf[_to] += _value;
 		allowance[_from][msg.sender] -= _value;
-		Transfer(_from, _to, _value);
+	 emit Transfer(_from, _to, _value);
 		return true;
 
 	}
@@ -76,7 +76,7 @@ contract TCoinAdvanced is admined, TCoin{
 
 	event FrozenFund(address target, bool frozen);
 
-	function TCoinAdvanced(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits, address centralAdmin) TCoin (0, tokenName, tokenSymbol, decimalUnits ) public {
+	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits, address centralAdmin) TCoin (0, tokenName, tokenSymbol, decimalUnits ) public {
 		
 		if(centralAdmin != 0)
 			admin = centralAdmin;
@@ -89,13 +89,13 @@ contract TCoinAdvanced is admined, TCoin{
 	function mintToken(address target, uint256 mintedAmount) onlyAdmin public {
 		balanceOf[target] += mintedAmount;
 		totalSupply += mintedAmount;
-		Transfer(0, this, mintedAmount);
-		Transfer(this, target, mintedAmount);
+	  emit	Transfer(0, this, mintedAmount);
+	  emit 	Transfer(this, target, mintedAmount);
 	}
 
 	function freezeAccount(address target, bool freeze) onlyAdmin public {
 		frozenAccount[target] = freeze;
-		FrozenFund(target, freeze);
+		emit FrozenFund(target, freeze);
 	}
 
 	function transfer(address _to, uint256 _value) public {
@@ -109,7 +109,7 @@ contract TCoinAdvanced is admined, TCoin{
 
 		balanceOf[msg.sender] -= _value;
 		balanceOf[_to] += _value;
-		Transfer(msg.sender, _to, _value);
+	emit 	Transfer(msg.sender, _to, _value);
 	}
 
 	function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
@@ -120,7 +120,7 @@ contract TCoinAdvanced is admined, TCoin{
 		balanceOf[_from] -= _value;
 		balanceOf[_to] += _value;
 		allowance[_from][msg.sender] -= _value;
-		Transfer(_from, _to, _value);
+	emit 	Transfer(_from, _to, _value);
 		return true;
 
 	}
@@ -135,7 +135,7 @@ contract TCoinAdvanced is admined, TCoin{
 		require(balanceOf[this] > amount) ;
 		balanceOf[msg.sender] += amount;
 		balanceOf[this] -= amount;
-		Transfer(this, msg.sender, amount);
+	emit Transfer(this, msg.sender, amount);
 	}
 
 	function sell(uint256 amount) public {
@@ -145,7 +145,7 @@ contract TCoinAdvanced is admined, TCoin{
 		if(!msg.sender.send(amount * sellPrice * 1 ether)){
 			revert();
 		} else {
-			Transfer(msg.sender, this, amount);
+		emit	Transfer(msg.sender, this, amount);
 		}
 	}
 
@@ -175,9 +175,3 @@ contract TCoinAdvanced is admined, TCoin{
 
 
 }
-
-
-
-
-
-
