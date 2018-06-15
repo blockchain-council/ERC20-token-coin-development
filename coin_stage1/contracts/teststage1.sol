@@ -1,10 +1,10 @@
 
-pragma solidity ^0.4.8;
+pragma solidity ^0.4.22;
 contract TCoin{
 	mapping (address => uint256) public balanceOf;
 	// balanceOf[address] = 5;
 
-	function TCoin(uint256 initialSupply) public {
+	constructor(uint256 initialSupply) public {
 		balanceOf[msg.sender] = initialSupply;
 	}
 
