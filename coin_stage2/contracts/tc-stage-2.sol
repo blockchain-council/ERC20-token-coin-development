@@ -1,4 +1,4 @@
-pragma solidity ^0.4.8;
+pragma solidity ^0.4.22;
 contract TCoin {
 
 	mapping (address => uint256) public balanceOf;
@@ -12,7 +12,7 @@ contract TCoin {
 	event Transfer(address indexed from, address indexed to, uint256 value);
 
 
-	function TCoin(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
+	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
 		balanceOf[msg.sender] = initialSupply;
 		totalSupply = initialSupply;
 		decimal = decimalUnits;
