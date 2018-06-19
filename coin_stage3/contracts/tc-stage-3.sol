@@ -28,7 +28,7 @@ contract TCoin {
 	string public symbol;
 	uint8 public decimals; 
 	uint256 public totalSupply;
-	event Transfer(address indexed from, address indexed to, uint256 value);
+	emit Transfer(address indexed from, address indexed to, uint256 value);
 
 
 	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
