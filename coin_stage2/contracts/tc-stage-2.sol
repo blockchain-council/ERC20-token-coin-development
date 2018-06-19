@@ -9,7 +9,7 @@ contract TCoin {
 	string public symbol;
 	uint8 public decimal; 
 	uint256 public totalSupply;
-	event Transfer(address indexed from, address indexed to, uint256 value);
+	emit Transfer(address indexed from, address indexed to, uint256 value);
 
 
 	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
@@ -27,7 +27,7 @@ contract TCoin {
 
 		balanceOf[msg.sender] -= _value;
 		balanceOf[_to] += _value;
-		Transfer(msg.sender, _to, _value);
+		emit Transfer(msg.sender, _to, _value);
 	}
 
 	function approve(address _spender, uint256 _value) public returns (bool success) {
@@ -42,7 +42,7 @@ contract TCoin {
 		balanceOf[_from] -= _value;
 		balanceOf[_to] += _value;
 		allowance[_from][msg.sender] -= _value;
-		Transfer(_from, _to, _value);
+		emit Transfer(_from, _to, _value);
 		return true;
 
 	}
