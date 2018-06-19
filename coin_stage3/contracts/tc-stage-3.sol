@@ -74,7 +74,7 @@ contract TCoinAdvanced is admined, TCoin{
 	uint256 public buyPrice;
 	mapping (address => bool) public frozenAccount;
 
-	event FrozenFund(address target, bool frozen);
+	emit FrozenFund(address target, bool frozen);
 
 	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits, address centralAdmin) TCoin (0, tokenName, tokenSymbol, decimalUnits ) public {
 		
