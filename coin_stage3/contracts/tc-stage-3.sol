@@ -85,7 +85,7 @@ contract TCoinAdvanced is admined, TCoin{
 		balanceOf[admin] = initialSupply;
 		totalSupply = initialSupply;	
 	}
-
+dghfghddfghfg
 	function mintToken(address target, uint256 mintedAmount) onlyAdmin public {
 		balanceOf[target] += mintedAmount;
 		totalSupply += mintedAmount;
