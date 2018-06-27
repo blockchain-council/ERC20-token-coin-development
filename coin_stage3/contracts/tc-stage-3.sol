@@ -28,7 +28,7 @@ contract TCoin {
 	string public symbol;
 	uint8 public decimals; 
 	uint256 public totalSupply;
-	emit Transfer(address indexed from, address indexed to, uint256 value);
+	event Transfer(address indexed from, address indexed to, uint256 value);
 
 
 	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits) public {
@@ -74,7 +74,7 @@ contract TCoinAdvanced is admined, TCoin{
 	uint256 public buyPrice;
 	mapping (address => bool) public frozenAccount;
 
-	emit FrozenFund(address target, bool frozen);
+	event FrozenFund(address target, bool frozen);
 
 	constructor(uint256 initialSupply, string tokenName, string tokenSymbol, uint8 decimalUnits, address centralAdmin) TCoin (0, tokenName, tokenSymbol, decimalUnits ) public {
 		
